@@ -3,7 +3,7 @@
 
 require_once "06-connexion.php";
 
-$sql = "SELECT * FROM products";
+$sql = "SELECT * FROM products WHERE price > 300";
 
 $statement = $pdo->query($sql);
 
